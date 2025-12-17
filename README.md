@@ -73,3 +73,31 @@ This version relies on `moviepy` (specifically version 1.x is recommended for st
 ***If that doesn't work, try: pip3 install "moviepy<2.0"
 2) Run software
 ***streamlit run File Name.py
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+📖 How to use
+Logo Settings (Left Panel):
+
+Select Logo: Choose a saved logo from the library or upload a new one.
+
+Save: If uploading, you can name and save the logo for future use.
+
+Size & Position: Adjust the width slider. Choose "Standard Presets" for quick corners or "Custom" for exact X/Y pixels.
+
+Speed: Adjust the "Concurrent Videos" slider (Default is 3). Higher = Faster, but uses more CPU.
+
+Upload Videos (Right Panel):
+
+Drag and drop multiple video files (MP4, MOV, AVI).
+
+Preview:
+
+Click 👁️ Generate Preview. The app will grab the first second of the first video to show you exactly how it looks.
+
+Process:
+
+Click ⚡ START TURBO PROCESSING.
+
+Wait for the progress bar to finish.
+
+Click the 📥 Download ZIP button to get your branded videos.
