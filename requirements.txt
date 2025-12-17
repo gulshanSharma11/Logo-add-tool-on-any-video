@@ -1,2 +1,2 @@
 streamlit
-moviepy3
+moviepy
