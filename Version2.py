@@ -4,7 +4,7 @@ import tempfile
 import zipfile
 import subprocess
 import concurrent.futures
-from moviepy.config import get_setting
+
 
 # --- CONFIGURATION ---
 LOGO_DIR = "saved_logos"
@@ -14,10 +14,7 @@ if not os.path.exists(LOGO_DIR):
     os.makedirs(LOGO_DIR)
 
 # --- FFMPEG SETUP ---
-try:
-    FFMPEG_BINARY = get_setting("FFMPEG_BINARY")
-except:
-    FFMPEG_BINARY = "ffmpeg" 
+FFMPEG_BINARY = "ffmpeg"
 
 def get_ffmpeg_position_cmd(mode, pos_v, pos_h, margin, custom_x, custom_y):
     """Returns the FFmpeg overlay coordinates based on mode."""
