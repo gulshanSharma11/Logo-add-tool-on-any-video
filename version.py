@@ -4,14 +4,10 @@ import tempfile
 import zipfile
 import subprocess
 import concurrent.futures
-from moviepy.config import get_setting
 
 # --- ATTEMPT TO FIND FFMPEG AUTOMATICALLY ---
 # We try to find the ffmpeg binary that MoviePy already installed
-try:
-    FFMPEG_BINARY = get_setting("FFMPEG_BINARY")
-except:
-    FFMPEG_BINARY = "ffmpeg" # Fallback to system command
+FFMPEG_BINARY = "ffmpeg"
 
 # --- CONFIGURATION ---
 LOGO_DIR = "saved_logos"
